@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2016-05-03T13:42:01
+# Project created by QtCreator 2016-05-03T13:41:43
 #
 #-------------------------------------------------
 
@@ -11,10 +11,14 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = Hangman
 TEMPLATE = app
 
-
 SOURCES += main.cpp\
-        mainwindow.cpp
+        controller/mainwindow.cpp \
+    model/hangman.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += controller/mainwindow.h \
+    model/hangman.h
 
-FORMS    += mainwindow.ui
+FORMS    += view/mainwindow.ui
+
+RESOURCES += \
+    resrouces.qrc
